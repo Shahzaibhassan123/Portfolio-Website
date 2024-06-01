@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skill</a>
+            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Shahzaib Hassan</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>Graphics, UI UX Designer and Full Stack Developer <br> Have a great experience by working with International Clients.</p>
+            <div class="home-sci">
+                <a href="#" style="--i:7">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZFJREFUWEftl79KxEAQxr8JycFlg3iVWPjvFVSsrWwEG8FnEBHUytZatBAR8Q0En0B8AlHBJxC1UpBTOCdFksuIRSQXvNs9Lnek2JSzk29/+81sskuo2EMV44EF0lWkNIdExGmH4aoACwBSIfp00rQpwIcXBNc6kGy8FKCEeS0FTgiY/W9iTynjeYwTu60wCsNtEjnt5cDIgCLmeQIedOUYGVDCfCbAVmWAYuZbAEsFoDsQ7bj1+j0RxTrY4vhAPZQwPwkwlxcVYLGmlLaM3UAHAoqYXwiYzou7IpMUBG/9OlPKto+YXwmYskCZAzHzQaEUewDGOmJExxD5zmICvNeUOjctoXEPiQglYZiaCufybjylVkzfGzoQAReuUpuVAYLIvhcEh5UBIqIN1/evSgf6FYxbreUOYce5BDCRjxHRurTbzSzmJskjNRpfQwEqikbMzwTMVOk7ZIF6lt6WTLczrEPWIWCwq7TtIW0PheEuiYx3/Dp8/4iI/g5oOo1Sbx39TmaSb3xAMxErI8cC6Vz8Aeyo0yUjutBQAAAAAElFTkSuQmCC"
+                    />
+                </a>
+                <a href="#" style="--i:8">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABM9JREFUWEftV2uoVFUU/ta5e8/VvWb8UZQVBRFWpqIZSBRBJYVlRD+0LBGRqMBrQWRCSQ8fRVFREZX0QqTooRUFgqFREfQiw8pn3AShKEh/OWdvx3vOmdXsuTP3njtz5tHcftwf7n/nnLW+/Z211l7r24QJtmiC8cEpQp0y0nWEThaLs/qI5grR+QD6OgHXvickciQR2dNfKOzrxqcjodi5OyCyQYBp3QC2tBEZpCB4RBmztR1OS0Ji7dkxsAXA9eMi0uy8SwEriPmvLNyWhCJrPwOwoOb0rQCbAfykjdlHRFE3JEWkPzpxYg6AywkYgMj0mt8Ozbywa0Kxc4tE5MOqg8hanc8/1Q2BdjYikkuce1GAld6OiBYrYz5q9MmMUGztoK8ZEdmay+eX9EomKhavFWApBcFUAbZrYzbHzu0GMBtEv2lj6hEb2aKJ0MlicUYQBPurFkFwtZ48+eteCQ1Zu4qAl9NpisNwmRC97d8povPImD/T+E2E0ulSxuRa1YscPVqIjVkN4AoAl/rkAvgZwPfKmGeJyMbOLRGR96spArYo5hWlUmlaX5IM1t7drJi3tyU0ZO1KAl4FcEwzn5EVnSgMrwORP4HnZH0X4A8ql5frQuEr3zbKwJkUBPv1pEmfiwjHzoXV8gRW5Zj9Xq1TFoXhGhA9Q8DvivnCxg2jYvGaSiq/HEWgL1Au/0pESohmQGR+6ttV2phv0hgiQrFz5dqBeVjn80+3J2Tto5Xq2QBgr2aePQZsOE0HAJzrIwiRpTqf35W2icJwAYjeBXCaAEe0MTOJyI2xsTaudfvHNPPGToTWVaL5OIDdmnle2njI2rsIeKOW/4WKeUdWymLnFovItqqdyHKVz1eLuL4ia30fUwC6IrTeG/ri1My+YEdWbO1bAtxZaZjfaeYrs8ikNt3ji52ATYp5oIFQCUB/t4R8unzaftHM/vSM/plzB3239UdZMd/XjlBs7esC3J2JY60FYHxpaGafjdGyawSNrB1OGdEhbcwlDYQOQeRiAl5RzPd2IPSaAPcAOKCZZzZEyJ8yrtTRRs3ss9EFoQygoTB8j4huz0pnxo/5njTHN8GcMcsbCPkin1x5t04z+xLpjVAUhg+BqDrXCGhqanXU2LnbROQD/yxED+SMeaGB0BAA7UtDMz/RiZDP6bqslEkYnhUTeaF1OoCjEFmm8/mdacDY2hsrc/Adf+wB/K2SZDZNmXKsbiMiQexcUn3OGNxNoyOydm2F/ZMEHFbMTaIsCsMbQDR63KlNYyyX5+tCYbSJVjmIiZ3zRe1H/mptzPNtI/R/j47G2moYHQM55k1tCcXW3iLAJ/5nlDH9HYbrGi++AMyt9BQ/DsYM16xTWCqVLuhLksPDAaJFypiP2xI6efz49KCv72DVaJzyI4tQWn6Uy+VZ/YXCsNSprbYCDcBOzVyXsVn4/+mdiKjYuR9rcuUfzTy1EaAVoZu8wqsZr1fGrCcir3d6Xo0StpU0bify/XXl1hqDHwR4syby9xKRn9Yd14jIF5kXAPenrlJ7lTGXZeG0vgaJmMS55+qivOPu3RtsU0kykO5NHWsobVDVN8BLFY1zUfd7Nlt6wQfgQcX8aTucjjfXuvOEuUqPJyq9+HYdoV7Ae/E5RahT1P4F0wgxQ513X3QAAAAASUVORK5CYII="
+                    />
+                </a>
+                <a href="#" style="--i:9">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAptJREFUWEftl89rE0EUx9+bzCTpzm4KKih48OIPvAiFggSFHsSLUEURhNariFC0BxHEH1jUo8WLIF41FAQv6kVErAUr9CCIP0C9+AdIpOnskiaz+2SD1XV33LQ1CYFkjrNv5/vZ77z3dgahywZ2GQ/0gZrtiNGhZaX2ZBDPEeIuJPqofX86Xyh8brZYK54ngGquO4QArwFg4LcAUZlzXsR8/ksrRNPWSAIp9QARx+MvIcBdLuWZjgPVXfctAAwlhInmhG2PdBxIe16JiMYMDt3jUp7uOBC57rBGnAciERGvBEFQzDnOp44DhYI11x0GokkMqwzgg080nbPt9+2GCdfvrcZISm2pM7YtYOxHLpf7hoi1Zi4nHKordRAALiVeZOyisKw34Tx53lYdBKV4DDF2IWtZC1qpcQK4Cog7IzE+ADwHotvCtp/9CywBpJU6SYj3DVV2mEv5JJyvVqvbM77/1RBzCACOEsCpVCcQbwnLOm+KWQvQKJfyaRoQIL4AogPNtqWRvIjHuWU9MnzU31MpDh3hUj5OBVoNyZ+YBSHl3v8BarplkcXLQBS2CQTE/QDATKxc6404OFiOPmvtloUJj1gSWk9iofA9FKp73j4gCpNYGgplRAwMzK0XaDUOKW5ZmxHRi4rUXXcKwqqLDUQc45Y10zYgInqYte0TcWHtuqME0Mi/6CCAiayUd9oGBAA3hZSX48J1zysC0bwhj64IKW+0E2hKSHktLhyeQBniOwNQIn4tSR0t+x0Z3zedHq8LKRO5sry0tJsxZjop9IEau9R3KJKs/Rxa+bn2cJX9amLH4k3M9/2Zles0LS5u0JyfTTS6IHglHOdl4hdRqWzSmcyEIX5WOM5saqc2HRM6Oddbt471ONt1Dv0EUGuuNCnlWlEAAAAASUVORK5CYII="
+                    />
+                </a>
+                <a href="#" style="--i:10">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABV5JREFUWEftl0uMFEUYx/9fv9atmoXdJSgHUHwkihGMBiP4igTNRoXEV3yQKBrUKCIaEy8aEohGoweNAoEoKvIQPBg1QYgvwBgEQmIUNFzwgIIgICxLV83sdPd8TvX2kHa2Z3oWOXCgbt3V31e//t5FOMMWnWE8OAuU55FTthAzt4Wl0iSKotEMjALgEHCQgX2OlNuJyM87PGt/yECh1vcy80wAUwG0Nzg0BLCZmFfZUq4gIm4VrmWgslLXEPAOgEl1yo8C2AegBGAsgHPr9n8G0RxXiC2tQLUEFGr9ADOvNG4xSgnYw8CHDtFKEuLP9EHMXIi0vhHANAYeB+ACYCaa6wmxKA8qF6is9RxiXpgoOsDAPFeI5UQU5SlnrceEzEsA3BF/y/yWWyg830yuKVDg+z0g2hAbhWiTUy7fQ52dx/JA6ixmRVovYuCpmInoOU+ItxvpaAhUKpUutqPoFwASwLeOED1EVBkKTPrbUKllDMwyTGDucQuFb4aUZYFSnwK4G8B+JwjG1yzDzBQWi9c5wB/18dMMlpndUOtNAK4HcMARYiwRletlMi1U1noSMW9NAni6I+W6gRDgtlDrzUmmbXOlnDwUi5X6+i61bXuXCfRqvXrMk/L9loBCpd6NM4RosyvElJpQWanZBCyuPVeYJ7QVCuaAlleo1GIGZgPY4kp5Qy4QM9uh1n8DGGEEPSlNlsQrUOpLALfXnglY6kgZB2urK/D9W0AUx4/T399J3d3H07KDXNbv++Mtop2xgGWNpfb2vSmgzwDcmVKwzpVyeqswidu9UGuTqQKVyhS3o8OEwMk1CCj1B6EjhJcu+4HvvwCiNxLp/U6lcjV1dBwaClBiaZO9E4j5IadQWNUUKKnKawAccqU8L/0xHz/eHTrOHgBdAA46QlyQlSl5gIFSP1RLiYmfl1wpX20O5PszmGg1gD5XyuH1ystKzSJgmXlPwEJHyrl5APX7gVI/AjAZOs+V8pXmQErdxsD6OIaiaCQNG3ZkEJTvf0xEDyZQS20hnk1bquz7j7pSriEi03AHrbJSewk43xRKT8oPmgKVSqWL7Cj6PQ5AosmeENvqNcZFrljcAGYzgpi1g4EnPSl/Kms9l5hNa+glYLVN9Hq6gPLRo8PDtrZ/ANhJxf66KVBcibU2VumuemWBK+X8rL/k3t6u0HW/A3BVan87gCsBnJN6t9uV8vLac+j7DzPRRwDKjhAj6ge57Eqt1HICzBB22BFidKPANZU70vrNpNA1CqX1rpQD3X6gltUCOrNkZAIFxeJN1RrxfRwjzDOdQmFFs8DtP3FinG1ZTyfNM22dnQ7RtJrLAt+/FUSxiwi4y5Hy83q9Dbt9YBoh88317aMZGDPLqFicxszjGDjsCrGMiPrjeGQWodY7ABj3ZbaNBDT7iEApIzwRwGuulC82A2llr+z7a4nofgAhA9eaBMiSy7QQHzvWGXqemZUJlcpUt6NjYyuHZgY/cyHU2oy/ccvJqs5Ns8xshlrfVzX7JwCKjhCmOHpRsdgDZuOO3Y6Ui4lI57iPIqVmgOhlBi5Mvp3vSrmgmVymhUKl3jPzihmkAPwKwIwg8YCfrD4QLTHQrhC/pbOQfX9UaFkzwPwIgPE1AQbmeFKeHF0aQWVnmVLmJjG6TsjcrczscwUAK7VXAfMeEPViwBIj6+R2wbKecdvb46zNW4PHj76+yyzb3p0IHiHgCzBvtINgPXV19cYWIHqi2nzNkPWf5ps6LEguiqv/90UxrhXAxGrb+KpRJiRpTCgWx4RRdAlb1jhilslV+i9Hyq1EpPKs0XKWnYqi0yWTe1E8XQe1qucsUJ6l/gX9DTlDm6rIjAAAAABJRU5ErkJggg=="
+                    />
+                </a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="2.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>Shahzaib Hassan, a proficient full-stack developer, brings expertise honed through his education at UET Lahore. With a comprehensive skill set spanning front-end and back-end technologies, he excels in crafting dynamic and intuitive digital
+                solutions. His passion for coding is evident in his commitment to creating efficient, user-centric applications that push boundaries and enhance the online experience for users across diverse platforms and industries.</p>
+
+            <a href="#" class="btn-box-2">More About Me </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code-alt' style='color: #0ef'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima commodi placeat beatae cupiditate, aperiam ipsam corrupti tempora voluptates suscipit.</p>
+                        <a href="#" class="read">learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-crop' style='color:#0ef'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima commodi placeat beatae cupiditate, aperiam ipsam corrupti tempora voluptates suscipit.</p>
+                        <a href="#" class="read">learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-apple' style='color:#0ef'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima commodi placeat beatae cupiditate, aperiam ipsam corrupti tempora voluptates suscipit.</p>
+                        <a href="#" class="read">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section>
+        <div class="container1" id="Skills">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="technical-bars">
+                <div class="bar"><i class='bx bxl-html5' style='color:#c95d2e'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-python' style='color:#c32ec9'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+                <div class="radial-bar"> <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                    <div class="percentage">100%</div>
+                    <div class="text">Creativity</div>
+                </div>
+                <div class="radial-bar"> <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                    <div class="percentage">100%</div>
+                    <div class="text">Communication</div>
+                </div>
+            </div>
+            <div class="radial-bars">
+                <div class="radial-bar"> <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Problem Solving</div>
+
+                </div>
+                <div class="radial-bar"> <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Team Work</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2>Latest <span>Project</span></h2>
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="portfolio1.jpg" alt="">
+                        <div class="layer">
+                            <h5>UI/UX Design</h5>
+                            <p>Clean, intuitive UI/UX design crafted for seamless user interaction, ensuring a modern, engaging web experience</p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="portfolio2.jpg" alt="">
+                        <div class="layer">
+                            <h5>Web Development</h5>
+                            <p>Web Development: Crafting functional and responsive websites with user-friendly interfaces and robust backend systems.</p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="portfolio3.jpg" alt="">
+                        <div class="layer">
+                            <h5>Graphic Design</h5>
+                            <p>Graphic Design: Transforming concepts into visually compelling assets, from logos to digital illustrations, for impactful brand communication.</p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h1 class="sub-title">Contact <span>Us</span></h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Feel free to reach out to us for any inquiries or feedback. We're here to help!</p>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Address</h3>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+92 334 4087787</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>shahzaibhassan2237@mail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="bx bxl-facebook" style="color: #0ef;"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-twitter" style="color: #0ef;"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-linkedin" style="color: #0ef;"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-instagram" style="color: #0ef;"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright-section">
+
+        <p>All content ©2024 Entspos. All rights reserved. No part may be reproduced without permission </p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
